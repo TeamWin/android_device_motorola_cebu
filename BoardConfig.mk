@@ -59,13 +59,13 @@ BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 \
 			androidboot.memcg=1 \
 			lpm_levels.sleep_disabled=1 \
 			video=vfb:640x400,bpp=32,memsize=3072000 \
-			msm_rtb.filter=0x237\ 
+			msm_rtb.filter=0x237\
 			service_locator.enable=1 \
 			swiotlb=2048 \
 			loop.max_part=7 \
 			androidboot.hab.csv=3 \
 			androidboot.hab.product=cebu \
-			androidboot.hab.cid=50 \ 
+			androidboot.hab.cid=50 \
 			firmware_class.path=/vendor/firmware_mnt/image
 # For the love of all that is holy, please do not include this in your ROM unless you really want TWRP to not work correctly!
 BOARD_KERNEL_CMDLINE += androidboot.fastboot=1
@@ -108,8 +108,8 @@ BOARD_MKBOOTIMG_ARGS += --dtb_offset $(BOARD_DTB_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
 
 # File systems
-BOARD_BOOTIMAGE_PARTITION_SIZE := 104857600
-BOARD_DTBOIMG_PARTITION_SIZE := 25165824
+BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
+BOARD_DTBOIMG_PARTITION_SIZE := 8388608
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 67108864
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
 BOARD_SYSTEMIMAGE_PARTITION_TYPE := ext4
@@ -122,9 +122,9 @@ BOARD_USES_RECOVERY_AS_BOOT := false
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
 
 # Super
-BOARD_SUPER_PARTITION_SIZE := 8589934592
+BOARD_SUPER_PARTITION_SIZE := 9763291136
 BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions
-BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 8589934592
+BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 9763291136
 BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := \
     system \
     product \
