@@ -41,7 +41,6 @@ insmod $module_path/mmi_sys_temp.ko
 insmod $module_path/moto_f_usbnet.ko
 insmod $module_path/qpnp-power-on-mmi.ko
 insmod $module_path/qpnp_adaptive_charge.ko
-insmod $module_path/focaltech_0flash_mmi.ko
 insmod $module_path/nova_0flash_mmi.ko
 insmod $module_path/chipone_tddi_mmi.ko
 insmod $module_path/leds_aw99703.ko
@@ -59,5 +58,3 @@ sleep 5
 echo 1 > $touch_path/reset
 
 return 0
-
-
