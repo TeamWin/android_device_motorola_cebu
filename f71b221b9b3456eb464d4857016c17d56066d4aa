@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e3adcf1b_39f6d93a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 691
+      },
+      "writtenOn": "2021-06-22T12:20:07Z",
+      "side": 1,
+      "message": "This change requires the kernel repository https://github.com/mistersmee/android_kernel_motorola_cebu\n\nI\u0027m currently testing the kernel build, making sure it\u0027s stable.\nWill be held in WIP as long as it needs. I might even abandon it and just plop the kernel that gets built as a prebuilt.",
+      "revId": "f71b221b9b3456eb464d4857016c17d56066d4aa",
+      "serverId": "9c1c7d72-6534-4d44-b0ea-39f63e804833"
+    }
+  ]
+}
