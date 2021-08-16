@@ -68,7 +68,7 @@ BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 \
 			service_locator.enable=1 \
 			swiotlb=2048 \
 			loop.max_part=7 \
-			androidboot.hab.csv=3 \
+			androidboot.hab.csv=5 \
 			androidboot.hab.product=cebu \
 			androidboot.hab.cid=50 \
 			firmware_class.path=/vendor/firmware_mnt/image
