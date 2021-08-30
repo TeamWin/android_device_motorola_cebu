@@ -16,7 +16,7 @@
 
 
 cc_library {
-    name: "libgptutils",
+    name: "libgptutils.motorola_bengal",
     vendor: true,
     recovery_available: true,
     shared_libs: [
@@ -32,5 +32,8 @@ cc_library {
         "gpt-utils.cpp",
     ],
     owner: "qti",
+    header_libs: [
+        "generated_kernel_headers",
+    ],
     export_include_dirs: ["."],
 }
