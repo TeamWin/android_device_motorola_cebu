@@ -17,9 +17,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-     $(LOCAL_DIR)/omni_cebu.mk
+     $(LOCAL_DIR)/twrp_cebu.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_cebu-user \
-    omni_cebu-userdebug \
-    omni_cebu-eng
+    twrp_cebu-user \
+    twrp_cebu-userdebug \
+    twrp_cebu-eng
