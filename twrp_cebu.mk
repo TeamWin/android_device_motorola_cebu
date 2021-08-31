@@ -25,16 +25,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # Inherit from cebu device
 $(call inherit-product, device/motorola/cebu/device.mk)
 
-# Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
-$(call inherit-product, vendor/omni/config/gsm.mk)
+# Inherit some common TWRP stuff.
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 # Release name
 PRODUCT_RELEASE_NAME := cebu
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := cebu
-PRODUCT_NAME := omni_cebu
+PRODUCT_NAME := twrp_cebu
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := motorola g(9) power
 PRODUCT_MANUFACTURER := motorola
