@@ -14,12 +14,10 @@
 # Persist
 /persist         ext4       /dev/block/bootdevice/by-name/persist                 flags=backup=1;display="Persist"
 /prodpersist     ext4       /dev/block/bootdevice/by-name/prodpersist             flags=backup=1;display="Product Persist"
-/firmware        ext4       /dev/block/bootdevice/by-name/modem                   flags=display="Firmware";mounttodecrypt;fsflags="ro,shortname=lower,uid=1000,gid=1000,dmask=227,fmask=337,context=u:object_r:firmware_file:s0";slotselect
-/firmware_mnt    ext4       /dev/block/bootdevice/by-name/modem                   flags=backup=1;display="Modem";fsflags="ro,context=u:object_r:firmware_file:s0";slotselect
+/firmware_mnt    ext4       /dev/block/bootdevice/by-name/modem                   flags=display="Firmware";mounttodecrypt;fsflags="ro,shortname=lower,uid=1000,gid=1000,dmask=227,fmask=337,context=u:object_r:firmware_file:s0";slotselect
 /fsg             ext4       /dev/block/bootdevice/by-name/fsg                     flags=backup=1;display="FSG";fsflags="ro,context=u:object_r:fsg_file:s0";slotselect
-/bt_firmware       ext4       /dev/block/bootdevice/by-name/bluetooth               flags=backup=1;display="Bluetooth";fsflags="ro,context=u:object_r:bt_firmware_file:s0";slotselect
+/bt_firmware     ext4       /dev/block/bootdevice/by-name/bluetooth               flags=backup=1;display="Bluetooth";fsflags="ro,context=u:object_r:bt_firmware_file:s0";slotselect
 /dsp             ext4       /dev/block/bootdevice/by-name/dsp                     flags=backup=1;display="DSP";slotselect
-/super           emmc       /dev/block/bootdevice/by-name/super                   flags=backup=1;display="Super";flashimg=1
 /metadata        ext4       /dev/block/bootdevice/by-name/metadata                flags=backup=1;display="Metadata"
 /logo            emmc       /dev/block/bootdevice/by-name/logo                    flags=backup=1;display="Boot Logo";slotselect;flashimg=1
 /keymaster       emmc       /dev/block/bootdevice/by-name/keymaster               flags=slotselect
@@ -27,8 +25,3 @@
 # Removable storage
 /external_sd     auto       /dev/block/mmcblk1p1    /dev/block/mmcblk1            flags=display="Micro SD Card";storage;wipeingui;removable
 /usb-otg         auto       /dev/block/sda1         /dev/block/sda                flags=display="USB OTG";storage;wipeingui;removable
-
-# Dynamic Partitions
-system           ext4       /system                                               display="System";logical
-vendor           ext4       /vendor                                               display="Vendor";logical
-product          ext4       /product                                              display="Product";logical
