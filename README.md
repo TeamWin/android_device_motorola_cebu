@@ -22,7 +22,7 @@ Front Camera | 16 MP, 1.0µm
 ### Kernel Source
 Check here:
 
-https://github.com/mistersmee/kernel_motorola_sm4250/
+https://github.com/mistersmee/android_kernel_motorola_cebu/
 
 
 ### How to compile
